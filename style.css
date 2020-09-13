@@ -1,0 +1,189 @@
+body {
+  margin: 0;
+  font-family: "Acme", sans-serif; }
+
+* {
+  box-sizing: border-box; }
+
+.header, .content-wrapper, .content-wrapper .container, .content-wrapper .feedback-form {
+  width: 100%;
+  float: left; }
+
+.header img, .content-wrapper img, .content-wrapper .container img, .content-wrapper .feedback-form img {
+  width: 100%; }
+
+.content-wrapper {
+  background-color: #e5e5e5;
+  padding: 30px; }
+
+.content-wrapper .container {
+  border: 1px solid #c5c4c4;
+  background-color: #f9f9f9;
+  border-radius: 5px; }
+
+.content-wrapper .nav {
+  width: 20%;
+  float: left;
+  padding: 20px;
+  border-radius: 5px 0px 0px 5px; }
+.content-wrapper .nav a {
+  background-color: #69ac8c;
+  border-radius: 4px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  padding: 12px 15px;
+  color: #ffffff;
+  margin-bottom: 10px; }
+.content-wrapper a:hover {
+  background-color: #368d64; }
+.content-wrapper a.active {
+  color: #000000;
+  background-color: #505355;
+  border: 1px solid #368d64; }
+.content-wrapper .content {
+  float: left;
+  width: 80%;
+  background-color: #ffffff;
+  padding: 20px;
+  padding-bottom: 50px;
+  border-left: 1px solid #c5c4c4;
+  border-radius: 0px 5px 5px 0px;
+  min-height: 600px; }
+.content-wrapper .heading {
+  background-color: #368d64;
+  font-size: 25px;
+  padding: 10px 15px;
+  margin: 0px 0px 10px;
+  border-radius: 4px;
+  border: 1px solid #a7a0a0;
+  color: #2c2b2b; }
+.content-wrapper p {
+  font-size: 16px;
+  color: #000000;
+  line-height: 24px;
+  margin: 0px 0px 15px; }
+.content-wrapper .products .box {
+  width: calc(33.33% - 30px);
+  float: left;
+  box-shadow: 0px 0px 10px #cdcdcd;
+  height: 350px;
+  margin: 15px;
+  border-radius: 4px;
+  position: relative; }
+  .content-wrapper .products .box img {
+    max-width: 100%;
+    max-height: 100%;
+    padding: 20px;
+    width: auto;
+    height: auto;
+    position: absolute;
+    display: inline-block;
+    margin: auto;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1; }
+  .content-wrapper .products .box .price, .content-wrapper .products .box .buy {
+    padding: 10px 20px;
+    color: #ffffff;
+    font-size: 16px;
+    position: absolute; }
+  .content-wrapper .products .box .price {
+    background-color: #505355;
+    left: 0;
+    top: 0;
+    z-index: 10; }
+  .content-wrapper .products .box .buy {
+    background-color: #e6b723;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    text-decoration: none; }
+.content-wrapper .feedback-form {
+  border-top: 1px solid #c5c4c4;
+  padding-top: 20px; }
+  .content-wrapper .feedback-form form {
+    float: left;
+    width: 50%; }
+    .content-wrapper .feedback-form form .row {
+      width: 100%;
+      float: left;
+      margin-bottom: 15px; }
+      .content-wrapper .feedback-form form .row .label {
+        width: 30%;
+        float: left;
+        line-height: 40px;
+        font-size: 15px;
+        font-weight: bold; }
+      .content-wrapper .feedback-form form .row .input {
+        width: 70%;
+        float: right; }
+        .content-wrapper .feedback-form form .row .input .form-control {
+          width: 100%;
+          height: 40px;
+          border-radius: 4px;
+          border: 1px solid #c5c4c4;
+          padding: 6px 12px; }
+        .content-wrapper .feedback-form form .row .input textarea.form-control {
+          height: 100px; }
+        .content-wrapper .feedback-form form .row .input .btn {
+          color: #000000;
+          background-color: #505355;
+          border: 1px solid #368d64;
+          border-radius: 4px;
+          height: 40px;
+          padding: 0px 30px;
+          font-size: 16px;
+          cursor: pointer; }
+        .content-wrapper .feedback-form form .row .input .btn:hover {
+          background-color: #368d64; }
+
+.footer {
+  background-color: #505355;
+  padding: 50px 30px;
+  float: left;
+  width: 100%;
+  text-align: center; }
+  .footer h5 {
+    color: #d8d8d8;
+    font-size: 16px;
+    margin: 0px;
+    font-family: comic sans ms; }
+  .footer p {
+    color: #ffffff;
+    margin: 10px 0; }
+
+/*Responsive*/
+/*if width equal to or less than 991 then*/
+@media (max-width: 991px) {
+  .content-wrapper .content .products .box {
+    height: 280px; }
+
+  .content-wrapper .content .feedback-form form {
+    width: 70%; } }
+/*if width equal to or less than 767 then*/
+@media (max-width: 767px) {
+  .content-wrapper .nav {
+    width: 100%; }
+
+  .content-wrapper .content {
+    width: 100%;
+    border-radius: 0px 0px 5px 5px; }
+
+  .content-wrapper .content .products .box {
+    width: 100%;
+    margin: 15px 0px; }
+
+  .content-wrapper .content .feedback-form form {
+    width: 100%; } }
+/*if width equal to or less than 500 then*/
+@media (max-width: 500px) {
+  .content-wrapper .content .feedback-form form .row .label {
+    width: 100%; }
+
+  .content-wrapper .content .feedback-form form .row .input {
+    width: 100%; } }
+
+/*# sourceMappingURL=style.css.map */
